@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Header Background -->
+
+    <!-- Иконка кошелька -->
+
+    <!-- Дата -->
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/card_bg"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/textDate"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:focusable="false"
+            android:hint="Дата"
+            android:inputType="date"
+            android:textColor="#1F2937"
+            android:textColorHint="#6B7280"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/changeDate"
+            android:layout_width="50dp"
+            android:layout_height="56dp"
+            android:backgroundTint="#4F46E5"
+            android:onClick="setDate"
+            android:padding="8dp"
+            android:text="🗓"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <!-- Кошелек -->
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/card_bg"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout3">
+
+        <Spinner
+            android:id="@+id/spinWallet"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:minHeight="48dp" />
+
+
+
+    </LinearLayout>
+
+    <!-- Категория -->
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/card_bg"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout4">
+
+        <Spinner
+            android:id="@+id/spinCategory"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:minHeight="48dp" />
+
+
+    </LinearLayout>
+
+    <!-- Сумма -->
+    <EditText
+        android:id="@+id/textPrice"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext_bg"
+        android:digits="-+0123456789."
+        android:hint="Сумма"
+        android:inputType="phone"
+        android:padding="16dp"
+        android:textColor="#1F2937"
+        android:textColorHint="#6B7280"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout5" />
+
+    <!-- Кнопки действия -->
+    <LinearLayout
+        android:id="@+id/linerLayout1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:background="@drawable/card_bg"
+        android:elevation="4dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textPrice">
+
+        <Button
+            android:id="@+id/butDel"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="#EF4444"
+            android:text="Удалить"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:onClick="buttonDelete" />
+
+        <Button
+            android:id="@+id/butEdit"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:backgroundTint="#10B981"
+            android:text="Сохранить"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:onClick="buttonSave" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

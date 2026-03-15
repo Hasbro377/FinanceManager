@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/card_bg"
+    android:elevation="6dp"
+    android:orientation="horizontal">
+
+    <!-- Дата -->
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"
+        android:textColor="#1F2937"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Категория -->
+    <TextView
+        android:id="@+id/textCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"
+        android:textColor="#1F2937"
+        android:textSize="16sp" />
+
+    <!-- Сумма -->
+    <TextView
+        android:id="@+id/textSumm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"
+        android:textColor="#1F2937"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Описание -->
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:textColor="#1F2937"
+        android:textSize="14sp" />
+
+</LinearLayout>
