@@ -44,4 +44,4 @@
  <img width="200px" src="https://github.com/Hasbro377/FinanceManager/blob/main/Screenshots/Screenshot_20251205-125823_FinanceManager.jpg" alt="qr"/>
 </p> 
 
- Были описаны основные возможности приложения, еще больше фото можно найти в папке «Screenshots».
+ Описаны основные возможности приложения, еще больше фото можно найти в папке «Screenshots».
